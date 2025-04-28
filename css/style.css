@@ -852,7 +852,25 @@ color: white;
     background-color: #d3a236;
     border: none;
 }
-
+.service .data_of_visa {
+  width: 50%;
+  margin: 0 auto;
+  /* font-size: 15px; */
+}
+.service .data_of_visa p{
+  font-size: 17px;
+    padding-top: 20px;
+}
+.service .data_of_visa a{
+  background: none;
+  border-color: #d5a63f;
+  color: #d5a63f;
+}
+.service .data_of_visa a:hover ,.service .data_of_visa a:focus{
+  background: #d5a63f;
+  border-color: #d5a63f;
+  color: white;
+}
   /* end service*/
   /* start destinations */
   .destinations{
@@ -1965,12 +1983,13 @@ background-color: #d3a33b;
     padding: 0px
   }
   .property_offers_list li{
-    background-color: #80808047;
+    background-color: #8080801a;
     margin-bottom: 10px;
     display: inline-block;
     padding: 5px;
     border-radius: 5px;
     color: black;
+    font-size: 14px;
 
   }
   .view_deal_data .heart-icon{
@@ -2107,6 +2126,7 @@ background-color: #d3a33b;
 .travel_detail_data.active {
   display: block;
 }
+
   /* end page filter Gallery */
   /* start profile page */
   section.profile_account {
@@ -2194,6 +2214,420 @@ button.save_form {
   
 }
   /* end profile page */
+  /* start destionation*/
+  .image_destination_small img{
+    width: 330px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .image_destination_big img{
+    object-fit: cover;
+  }
+  .image_destination_big img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.image_destination_big {
+  height: 85%;
+}
+.image_of_header_section {
+  width: 100%;
+  height: 517px;
+}
+.description_about_city {
+  color: black;
+}
+.mapouter{position: relative;text-align: right;height: 100%;width: 100%;}
+.gmap_canvas{overflow: hidden;background: none !important;height: 100%;width: 100%;}
+.number_of_month{
+  list-style: none; padding: 0px;
+}
+.number_of_month li{
+display: inline-block;
+}
+.number_of_month li {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #fffafa;
+  border-radius: 50%;
+  justify-content: center;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+  border: 1px solid #707070;
+  color: #5F7897;
+  font-size: 15px;
+  margin-right: 8px;}
+  .weather_widget{
+    list-style: none;
+    padding: 0px;
+  }
+  .weather_widget li{
+    display: inline-block;
+  }
+  .weather_widget li .partly {
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    color: gray;
+  }
+  .weather_widget svg{
+    margin-top: -30px;
+  }
+  .weather_widget li span{
+    font-family: "secoundFont" !important;
+  }
+  .weather_widget li span a{
+    padding-left: 5px;
+  }
+  .tempreture{
+    font-size: 18px;
+
+  }
+  .destination{
+    background-color: white;
+  }
+  .destination_cards{
+    margin-top: 60px;
+  }
+  .destination_cards ul#pills-tab{
+    width: 29%;
+  }
+  .destination_cards .card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 19px;
+    padding-top: 20px;
+    padding: 11px;
+    border-radius: 15px;
+
+  }
+  .destination_cards .card a{
+   color: black;
+   text-decoration: none;
+  }
+  .destination_cards .card a .card-text{
+    color: #000000c2;
+  }
+    .destination_cards .badge {
+      position: absolute;
+      top: 10px;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #fff;
+      background: #ffffff61;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      z-index: 999;
+  }
+  
+  .destination_cards .rating-badge {
+    left: 10px;
+  }
+  
+  .destination_cards .location-badge {
+    right: 10px;
+  }
+  .destination_cards .location-badge i {
+    color: #0088DD;
+  }
+  .destination_cards .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25); /* Adjust darkness here */
+    z-index: 1;
+    border-radius: 15px 15px 0 0;
+  }
+  .destination_cards .image_of_card{
+    position: relative;
+  }
+  .destination_cards span.offer_today ,.best_deal{
+    background: #80808033;
+    padding: 5px;
+    /* margin-bottom: 27px; */
+    border-radius: 5px;
+    font-size: 12px;
+}
+.destination_cards .best_deal {
+  border-radius: 50px;
+  color: white;
+  background: #d3a236;
+}
+.destination_cards .heart-icon {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  font-size: 24px;
+  color: goldenrod;
+  cursor: pointer;
+  z-index: 10000000000;
+  text-align: end;
+}
+.destination_cards .title_of_travel{
+  margin-top: 20px
+}
+.destination_cards .travel_feature{
+  list-style: none;
+  padding: 0px;
+}
+.destination_cards .travel_feature li {
+  display: inline-block;
+  padding: 0 3px;
+  font-size: 14px;
+}
+.destination_cards a.deal_button {
+  background: #d4a43a;
+  padding: 6px 15px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.destination_cards .thumb{
+  width: calc(100%/4);
+}
+.destination_cards .card{
+  margin-bottom: 30px;
+}
+.famous_attraction{
+  margin-top: 30px;
+}
+.famous_attraction .service_title{
+  margin-bottom: 15px;
+
+}
+.famous_attraction .fav_tour_carousal .owl-stage-outer{
+  padding-top: 0px;
+} .famous_attraction .fav_tour_carousal .image_of_card{
+  height: 273px;
+}
+ .famous_attraction .fav_tour_carousal .image_of_card img{
+  height: 273px;
+  border-radius: 15px;
+}
+.famous_attraction .fav_tour_carousal .image-overlay{
+  border-radius: 15px;
+}
+.visa_apply{
+  margin-top: 30px;
+  background-color: #d3a236;
+  text-align: center;
+  padding: 50px;
+}
+.visa_apply .data_visa{
+  width: 50%;
+  margin: 0 auto;
+}
+.visa_apply .data_visa p,.visa_apply .data_visa h3,.visa_apply .data_visa a{
+  color: white;
+}
+.explor_contries{
+  margin-top: 30px;
+}
+.destination i{
+  font-size: 26px;
+}
+.Watch_vedio{
+  background: #d3a236;
+    padding: 7px 15px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.Watch_vedio i{
+ font-size: 15px;
+}
+  /* end destination */
+  /* start tour destination */
+  .tour_carousal_images.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.tour_carousal_images.owl-carousel .owl-nav{
+  display: none;
+}
+.tour_features{
+  list-style: none;
+  padding: 0px;
+  margin-top: 30px
+}
+.tour_features li {
+  display: inline-block;
+  padding: 0px 28px;
+  border-right: 1px solid #8080804a;
+}
+.tour_features li:last-child {
+
+  border-right: none;
+}
+.tour_features li i ,.tour_features li svg{
+  font-size: 22px;
+   margin-bottom: 6px;
+   color: #000000c2;
+}
+/* .tour_features li svg{
+  fill:  #000000c2;
+} */
+  /* end tour destion */
+  .places_to_vist{
+    margin-top: 30px;
+  }
+  .places_we_have {
+    list-style: none;
+    padding: 0px;
+    border-bottom: 1px solid #8080803b;
+}
+  .places_we_have li{
+    display: inline-block;
+    padding: 0 20px;
+    font-family: 'secoundFont' !important;
+    padding-bottom: 20px;
+  }
+  .card_white{
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    /* overflow: hidden; */
+  }
+  .places_we_have li i {
+    padding-right: 7px;
+  }
+  .card_white  p{
+    color: black;
+  }
+  .card_white{
+    margin: 30px 0px;
+  }
+  .card_white .highlits{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .card_white .highlits li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .picked_places_table td{
+    font-size: 13px;
+    font-family: 'secoundFont' !important;
+
+  }
+  section.another_places.service.famous_tour_section.destination_cards {
+    background-color: #d3a236;
+    padding: 25px;
+}
+.another_places h3{
+  margin-bottom: 30px;
+}
+.p_of_contact_button{
+  width: 100%;
+}
+
+.p_of_contact_button a {
+  width: 100%;
+  text-align: left;
+  background: none;
+  color: black;
+  border: none;
+}
+.p_of_contact_button a:hover,.p_of_contact_button a:focus{
+  border:none;
+  background: none;
+  color: black;
+}
+.contact_us .number_list,.contact_us ul{
+  list-style: none;
+  padding: 0px; padding-bottom: 30px;
+}
+.padding_8{
+  padding: 8px;
+}
+.date_title {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 15px;
+  color: gray;
+  font-family: 'secoundFont' !important;
+}
+.booking_design p{
+  font-family: 'secoundFont' !important;
+  font-size: 20px;
+}
+.counter_sec{
+  text-align: right;
+}
+.booking_design button{
+  border: none;
+  font-size: 30px;
+  color: #e2c179;
+  font-weight: bold;
+  display: inline-flex
+;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+.booking_design button:hover,.booking_design button:focus{
+  background-color: #d3a236;
+  color: white;
+}
+.total_section_of_booking {
+  border-top: 1px solid #80808033;
+  padding: 0 15px;
+  background-color: #80808033;
+  border-radius: 5px;
+  /* font-size: 20px; */
+}
+.total_section_of_booking p{
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+button.booking_know {
+  width: 50%;
+  margin-top: 24px;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #d3a236;
+  color: white;
+  /* margin: 0 auto; */
+}
+.tour_features li {
+  display: inline-block;
+  padding: 0px 21px;
+  border-right: 1px solid #8080804a;
+  margin-top: 18px;
+}
+.title_day{
+  font-size: 20px;
+}
+.note {
+  margin-top: 3px;
+  background-color: #F8F9FB;
+  padding: 19px;
+  border-left: 4px solid #DFE4EA;
+}
+.note i{
+  color: #0088DD;
+}
+.note_title {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.imag_of_trip_day{
+  height: 300px;
+  width: 100%;
+}
+.imag_of_trip_day img{
+  object-fit: cover;
+  border-radius: 10px;
+}
   /* start media */
   @media screen and (max-width: 567px) {
     nav.site-navigation{
@@ -2316,5 +2750,33 @@ ul.feauter_list {
 .view_deal.deal_on_filter_page {
   padding: 5px;
   font-size: 10px;
+}
+.image_destination_big {
+  height: 100%;
+}
+.image_destination_small img {
+  width: 195px;
+  height: 100%;
+  object-fit: cover;
+}
+.image_of_header_section {
+  width: 100%;
+  height: 100%;
+}
+.about_the_city {
+  margin-top: 30px;
+}
+.number_of_month li {
+  margin-bottom: 15px;
+}.weather_widget svg {
+  margin-top: 0px;
+}
+.visa_apply .data_visa{
+  width: 100%;
+}
+.note {
+
+  font-size: 13px;
+
 }
   }

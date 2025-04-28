@@ -1,0 +1,455 @@
+
+.visaModal .wizard-v4-content   {
+
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+}
+.visaModal .wizard-v4-content .wizard-form {
+	width: 100%;
+}
+.visaModal .wizard-form .wizard-header {
+	text-align: center;
+	padding:  40px 0 20px;
+}
+.visaModal .wizard-form .wizard-header .heading {
+	color: #333;
+	font-size: 32px;
+	font-weight: 700;
+	margin: 0;
+	padding: 8px 0 10px;
+}
+.visaModal .wizard-form .wizard-header p {
+	color: #666;
+	font-size: 18px;
+	font-weight: 400;
+	margin:  0;
+}
+.visaModal .form-register .steps {
+	margin-bottom: 33px;
+}
+.visaModal .form-register .steps ul {
+    display: flex
+;
+    display: -webkit-flex;
+    list-style: none;
+    padding-left: 108px;
+    width: max-content;
+    margin: 0 auto;
+}
+.visaModal .form-register .steps li,
+.visaModal .form-register .steps li.current {
+	outline: none;
+	-o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    position: relative;
+}
+.visaModal .form-register .steps li .current-info {
+	display: none;
+}
+.visaModal .form-register .steps li a {
+	text-decoration: none;
+	outline: none;
+	-o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+}
+.visaModal .form-register .steps li a .title span {
+	display: block;
+}
+.visaModal .form-register .steps li a .title .step-icon { 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #ccc;
+    margin: 0 auto;
+    position: relative;
+    outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    color: #fff;
+    font-size: 18.6px;
+    margin-right: 108px;
+    text-align: center;
+    display: table-caption;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+.visaModal .form-register .steps li a .step-icon i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.visaModal .form-register .steps li .step-icon::before,
+.visaModal .form-register .steps li:last-child .step-icon::after {
+	position: absolute;
+	content: "";
+	background: #e5e5e5;
+	width: 108px;
+	height: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.visaModal .form-register .steps li .step-icon::before {
+	right: 100%;
+}
+.visaModal .form-register .steps li:last-child .step-icon::after {
+    left: 100%;
+}
+
+.visaModal .form-register .steps li.current a .step-icon,
+.visaModal .form-register .steps li.current a:active .step-icon,
+.visaModal .form-register .steps li.done a .step-icon,
+.visaModal .form-register .steps li.done a:active .step-icon {
+    background: #d3a236;
+    background: #d3a236;
+    background: #d3a236;
+    /* box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); */
+}
+.visaModal .form-register .steps .current .step-icon::before,
+.visaModal .form-register .steps .current:last-child .step-icon::after,
+.visaModal .form-register .steps .done .step-icon::before {
+    background: #d3a236;
+    background: #d3a236;
+    background: #d3a236;
+}
+.visaModal .form-register .steps li a .step-text {
+	color: #999;
+	font-weight: 400;
+	font-size: 15px;
+	padding:  14px 0 8px;
+    margin-left: -24px;
+}
+.visaModal .form-register .steps .current .step-text,
+.visaModal .form-register .steps .done .step-text {
+	color: #333;
+}
+.visaModal .form-register .content {
+    margin: 0 20px 0 20px;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 35px 55px 60px;
+}
+.visaModal .form-register .content h2 {
+	display: none;
+}
+.visaModal .form-register .content .inner h3 {
+	font-size: 25px;
+    color: #333;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 18px;
+}
+.visaModal .form-register .content #form-total-p-3 .inner h3 {
+	padding-bottom: 5px;
+}
+.visaModal .form-register .content .inner h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333;
+	margin: 0;
+}
+.visaModal .inner .form-row {
+    display: flex;
+    margin: 0 -12px;
+    position: relative;
+}
+.visaModal .inner .form-row .form-holder {
+    width: 50%;
+    padding: 0 12px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.visaModal .inner .form-row .form-holder.form-holder-1 {
+    width: 84.1%;
+}
+.visaModal .inner .form-row .form-holder.form-holder-2 {
+	width: 100%;
+	position: relative;
+}
+.visaModal .inner .form-row .form-row-inner {
+	position: relative;
+}
+.visaModal .inner .form-row .form-holder .label {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #666;
+    transform-origin: 0 0;
+    transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+}
+.visaModal .inner .form-row .form-holder .border {
+    position: absolute;
+    bottom: 31px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #6bc734;
+    transform: scaleX(0);
+    -o-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .15s ease;
+    -o-transition: all .15s ease;
+    -ms-transition: all .15s ease;
+    -moz-transition: all .15s ease;
+    -webkit-transition: all .15s ease;
+}
+.visaModal .inner .form-row #radio {
+    margin-top: -5px;
+    margin-left: 7px;
+}
+.visaModal .inner .form-row #checkbox {
+	margin: 10px 0 28px 11px;
+    font-size: 15px;
+    color: #666;
+    font-weight: 400;
+}
+.visaModal .inner .form-row .form-holder label.special-label {
+    display: inline-block;
+    float: left;
+    margin-top: 25px;
+    padding-right: 20px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+}
+.visaModal .inner .form-row.form-row-date .form-holder select {
+    float: left;
+    width: 20.5%;
+    margin-right: 25px;
+}
+.visaModal .inner .form-row .form-holder input,
+.visaModal .inner .form-row .form-holder select {
+    width: 100%;
+    padding: 13px 0px 8px;
+    border: none;
+    border-bottom: 2px solid #e5e5e5;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.visaModal .inner .form-row .form-holder input {
+	font-size: 18px;
+    color: #333;
+}
+.visaModal .inner .form-row .form-holder select {
+	font-size: 15px;
+    color: #666;
+    background: #fff url('../images/wizard_v4_icon.png') no-repeat scroll;
+    background-position: right 0 center;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+}
+.visaModal .inner .form-row .form-holder select:focus {
+	border-bottom: 2px solid #6bc734;
+}
+.visaModal .inner .form-row .form-holder .form-control:focus,
+.visaModal .inner .form-row .form-holder .form-control:valid {
+	border-bottom: 2px solid #6bc734;
+	margin-top: 21px;
+}
+.visaModal .inner .form-row .form-holder .form-control:focus + .label, 
+.visaModal .inner .form-row .form-holder .form-control:valid + .label {
+	transform: translateY(-31px) scale(1);
+	-o-transform: translateY(-31px) scale(1);
+    -ms-transform: translateY(-31px) scale(1);
+    -moz-transform: translateY(-31px) scale(1);
+    -webkit-transform: translateY(-31px) scale(1);
+}
+.visaModal .inner .form-row  .form-holder .form-control:focus  + .border, 
+.visaModal .inner .form-row  .form-holder .form-control:valid  + .border {
+	transform: scaleX(1);
+	-o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+}
+.visaModal .actions ul{
+    list-style: none;
+    padding: 0px;
+}
+.visaModal .actions{
+    text-align: end;
+}
+.visaModal .actions li {
+    display: inline-block;
+    margin-right: 12px;
+    background-color: #d3a236;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.visaModal .actions li a{
+    color: white;
+}
+.visaModal .actions li.disabled{
+    display: none;
+}
+.visaModal .inner.width_in_middle {
+    width: 60%;
+    margin: 0 auto;
+    color: black;
+}
+.visaModal  p{
+    color: black;
+}
+.visaModal .nice-select{
+    margin-bottom: 30px;
+}
+.visaModal .payment_method button,.visaModal .payment_method button.active{
+    background: #d3a236;
+    margin-right: 16px;
+    color: white;
+}
+.visaModal .payment_method input{
+    margin-bottom: 20px;
+}
+.visaModal .close_button{
+    float: left;
+}
+li.back-step-li {
+    border: 1px solid #d3a236;
+    background-color: unset !important;
+    color: #d3a236 !important;
+}
+li.back-step-li a{
+    color: #d3a236 !important;
+}
+/* Responsive */
+@media screen and (max-width: 1199px) {
+	.wizard-v4-content {
+		margin: 180px 20px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.form-register .steps ul {
+	    padding-left: 0;
+	    justify-content: space-around;
+	    -o-justify-content: space-around;
+		-ms-justify-content: space-around;
+		-moz-justify-content: space-around;
+		-webkit-justify-content: space-around;
+	}
+	.form-register .steps li a .title {
+		text-align: center;
+	}
+	.form-register .steps li a .title .step-icon,
+	.form-register .steps li a .title .step-icon {
+		margin: 0 auto;
+	}
+	.form-register .steps li a .title .step-icon::before,
+	.form-register .steps li:last-child a .title .step-icon::after {
+		content: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	.visaModal .inner .form-row.form-row-date .form-holder select {
+	    width: 17.5%;
+	    margin-right: 20px;
+	}
+} 
+@media screen and (max-width: 575px) {
+	.wizard-v4-content {
+		width: 90%;
+	}
+	.wizard-form .wizard-header {
+		padding:  40px 20px 20px 20px;
+	}
+	.visaModal .inner .form-row {
+		flex-direction: column;
+		-o-flex-direction: column;
+		-ms-flex-direction: column;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		margin: 0;
+	}
+	.visaModal .inner .form-row .form-holder {
+		width: 100%;
+	}
+	.visaModal .inner .form-row .form-holder.form-holder-1 {
+	    width: 100%;
+	}
+	.visaModal .inner .form-row .form-holder {
+		padding: 0;
+	}
+	.visaModal .inner .form-row .form-holder label.special-label {
+	    float: none;
+	}
+	.visaModal .inner .form-row.form-row-date .form-holder select {
+	    float: none;
+	    width: 100%;
+	    margin-bottom: 20px;
+	    margin-right: 0;
+	    display: block;
+	}
+	.form-register .steps li a .title .step-icon {
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+	}
+	.form-register .steps li a .step-text {
+		font-size: 12px;
+	}
+	.form-register .content {
+		padding: 35px 30px 60px;
+	}
+	.visaModal .inner .form-row #radio {
+		margin-left: -2px;
+	}
+	.visaModal .inner .form-row #checkbox {
+		margin-left: 0;
+	}
+}

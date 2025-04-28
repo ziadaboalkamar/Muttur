@@ -158,6 +158,31 @@
 
 			
 	 }); 
+	 $(".tour_carousal_images").owlCarousel({
+		loop:true,
+		margin:0,
+		lazyLoad: true,
+		responsiveClass:true,
+		lazyLoad: true,
+		responsive:{
+			0:{
+				items:1,
+				nav:true
+			},
+			600:{
+				items:3,
+				nav:false
+			},
+			1000:{
+				items:4,
+				nav:true,
+				loop:false
+			}
+		}
+
+
+			
+	 }); 
 
 });
 function toggleFilter(e) {
@@ -194,6 +219,66 @@ function toggleFilter(e) {
 	});
   });
   
+
+
+  const counters = document.querySelectorAll('.counter_sec');
+
+  counters.forEach(counter => {
+	const minusBtn = counter.querySelector('button:nth-child(1)');
+	const numberSpan = counter.querySelector('span');
+	const plusBtn = counter.querySelector('button:nth-child(3)');
+  
+	let count = parseInt(numberSpan.textContent);
+  
+	minusBtn.addEventListener('click', () => {
+	  if (count > 0) {
+		count--;
+		numberSpan.textContent = count;
+	  }
+	});
+  
+	plusBtn.addEventListener('click', () => {
+	  count++;
+	  numberSpan.textContent = count;
+	});
+  });
+  
+
+  $(function(){
+    $("#form-total").steps({
+        headerTag: "h2",
+        bodyTag: "section",
+        transitionEffect: "fade",
+        enableAllSteps: true,
+        autoFocus: true,
+        transitionEffectSpeed: 500,
+        titleTemplate: '<div class="title">#title#</div>',
+        labels: {
+            close: 'Close',
+            previous: 'Back Step',
+            next: 'Next Step',
+            finish: 'Submit',
+            current: ''
+        },
+        onInit: function(event, currentIndex) {
+            // Add your Close button to the actions
+            var closeButton = '<a type="button"  data-bs-dismiss="modal">Close</button>';
+            $(".actions ul").prepend('<li class="close_button">' + closeButton + '</li>');
+			$(".actions ul li a:contains('Back Step')").parent('li').addClass('back-step-li');       
+		 },	onStepChanged: function (event, currentIndex, priorIndex) {
+			// When a step is done, add class to the previous section
+			var $allSections = $("#form-total").children("section");
+			console.log($allSections);
+			$allSections.eq(priorIndex).addClass('step-done');}
+    });
+
+    $("#date").datepicker({
+        dateFormat: "MM - DD - yy",
+        showOn: "both",
+        buttonText: '<i class="zmdi zmdi-chevron-down"></i>',
+    });
+});
+
   
   
   
