@@ -121,8 +121,8 @@
                                   </a>
                                   <div class="dropdown-menu dropdown-menu-end">
                                     <ul class="number_list">
-                                      <li><span><a href="#">Sign UP</a></span></li>
-                                      <li><span><a href="">Login</a></span></li>
+                                      <li><span><a href="#" class="sign_button" type="button" data-bs-toggle="modal" data-bs-target="#signModal" data-bs-backdrop="false">Sign UP</a></span></li>
+                                      <li><span><a href="" class="sign_button" type="button"  data-bs-toggle="modal" data-bs-target="#signModal" data-bs-backdrop="false">Login</a></span></li>
                                     </ul>
                                     <ul class="list_without_line">
                                       <li><span><a href="">Wishlist</a></span></li>
@@ -156,7 +156,11 @@
         </div>
         
       </section>
-  
+
+      <button class="fixed_button"  id="Chat_button" title="Chat whith us" ><i class="fa-solid fa-comments"></i></button>
+      <button class="fixed_button"  id="mobile_button" title="Download app" type="button" data-bs-toggle="modal" data-bs-target="#mobileModal"><i class="fa-solid fa-mobile"></i></button>
+      <button class="fixed_button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
       <!-- end nav bar -->
        <!-- START form for booking  -->
         <section class="form_for_booking space_for_section">
@@ -2078,7 +2082,7 @@
                         <!-- Button trigger modal -->
               
 
-                      <!-- Modal -->
+                      <!-- Modal visa -->
                       <div class="modal fade visaModal" id="visaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="visaModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
@@ -2355,6 +2359,85 @@
                         </div>
                       </div>
                         <!-- end modal for visa-->
+                         <!-- start login modal -->
+                         <div class="modal fade sign_modal" id="signModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="signModalLabel">Log in or sign up</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <h3>Welcome to Muttor</h3>
+                                <form action="" class="login_sign_up_modal">
+                                <div class="row">
+                                  <div class="col-lg-12 mb-3">
+                                    <div class="form-group">
+                                      <div class="form-select-custom from_select">
+                                        <select name="from" style="display: none;">
+                                          <option value="Gaza" disabled="" selected="">Gaza</option>
+                                          <option value="Paris">Paris</option>
+                                          <option value="London">London</option>
+                                        </select><div class="nice-select" tabindex="0"><span class="current"> Country</span><ul class="list"><li data-value="Gaza" class="option selected disabled">Gaza</li><li data-value="Paris" class="option">Paris</li><li data-value="London" class="option">London</li></ul></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 mb-3">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="05955522353">
+                                    <p class="small hint_of_number">We’ll call or text you to confirm your number. Standard message and data rates apply.</p>
+                                  </div>
+                                  <div class="col-lg-12 mb-3 text-center">
+                                    <button class="login_button">Continue</button>
+                                  </div>
+                               
+
+                                </div>
+                              </form>
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <ul class="another_tools_login">
+                                    <li>
+                                      <button>
+                                        <svg width="20px" height="20px" viewBox="-3 0 262 262" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"/><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"/><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"/><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"/></svg>
+                                        Continue with Google</button>
+                                    </li>
+                                    <li><button><svg fill="#000000" width="20px" height="20px" viewBox="-52.01 0 560.035 560.035" xmlns="http://www.w3.org/2000/svg"><path d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655"/></svg>
+                                      Continue with Apple</button></li>
+                                    <li><button><svg width="20px" height="20px" viewBox="0 0 266.895 266.895" xmlns="http://www.w3.org/2000/svg"><path d="M252.164 266.895c8.134 0 14.729-6.596 14.729-14.73V14.73c0-8.137-6.596-14.73-14.729-14.73H14.73C6.593 0 0 6.594 0 14.73v237.434c0 8.135 6.593 14.73 14.73 14.73h237.434z" fill="#485a96"/><path d="M184.152 266.895V163.539h34.692l5.194-40.28h-39.887V97.542c0-11.662 3.238-19.609 19.962-19.609l21.329-.01V41.897c-3.689-.49-16.351-1.587-31.08-1.587-30.753 0-51.807 18.771-51.807 53.244v29.705h-34.781v40.28h34.781v103.355h41.597z" fill="#ffffff"/></svg>
+                                      Continue with facedbook</button></li>
+                                    <li><button><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM16 12V13.5C16 14.8807 17.1193 16 18.5 16V16C19.8807 16 21 14.8807 21 13.5V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21H16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>Continue with email</button></li>
+                                    
+                                  </ul>
+                                </div>
+                              </div>
+                              </div>
+                    
+                            </div>
+                          </div>
+                        </div>
+                          <!-- end login modal -->
+                           <!-- start app modal -->
+                           <div class="modal fade" id="mobileModal" tabindex="-1" aria-labelledby="mobileModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="mobileModalLabel">For better experience on mobile</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                 <h2>Download Mtttour by one click</h2>
+                                 <div class="image_of_qr_code">
+                                  <img src="image/mobile_modal.png" width="100%" height="100%" alt="">
+                                 </div>
+                                
+                                </div>
+                           
+                              </div>
+                            </div>
+                          </div>
+                            <!-- end app modal -->
 
 
 

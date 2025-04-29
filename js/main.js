@@ -243,43 +243,107 @@ function toggleFilter(e) {
 	});
   });
   
+  $(function () {
+	// Only run if #form-total exists and .steps() is available
+	if (typeof $.fn.steps === "function" && $("#form-total").length > 0) {
+	  $("#form-total").steps({
+		headerTag: "h2",
+		bodyTag: "section",
+		transitionEffect: "fade",
+		enableAllSteps: true,
+		autoFocus: true,
+		transitionEffectSpeed: 500,
+		titleTemplate: '<div class="title">#title#</div>',
+		labels: {
+		  close: "Close",
+		  previous: "Back Step",
+		  next: "Next Step",
+		  finish: "Submit",
+		  current: "",
+		},
+		onInit: function (event, currentIndex) {
+		  // Add Close button to actions
+		  var closeButton = '<a type="button" data-bs-dismiss="modal">Close</a>';
+		  $(".actions ul").prepend('<li class="close_button">' + closeButton + "</li>");
+		  $(".actions ul li a:contains('Back Step')")
+			.parent("li")
+			.addClass("back-step-li");
+		},
+		onStepChanged: function (event, currentIndex, priorIndex) {
+		  // Mark prior step as done
+		  var $allSections = $("#form-total").children("section");
+		  $allSections.eq(priorIndex).addClass("step-done");
+		},
+	  });
+	}
+  
+	// Datepicker (conditionally as well, if needed)
+	if ($("#date").length > 0 && $.fn.datepicker) {
+	  $("#date").datepicker({
+		dateFormat: "MM - DD - yy",
+		showOn: "both",
+		buttonText: '<i class="zmdi zmdi-chevron-down"></i>',
+	  });
+	}
+  });
+  
 
-  $(function(){
-    $("#form-total").steps({
-        headerTag: "h2",
-        bodyTag: "section",
-        transitionEffect: "fade",
-        enableAllSteps: true,
-        autoFocus: true,
-        transitionEffectSpeed: 500,
-        titleTemplate: '<div class="title">#title#</div>',
-        labels: {
-            close: 'Close',
-            previous: 'Back Step',
-            next: 'Next Step',
-            finish: 'Submit',
-            current: ''
-        },
-        onInit: function(event, currentIndex) {
-            // Add your Close button to the actions
-            var closeButton = '<a type="button"  data-bs-dismiss="modal">Close</button>';
-            $(".actions ul").prepend('<li class="close_button">' + closeButton + '</li>');
-			$(".actions ul li a:contains('Back Step')").parent('li').addClass('back-step-li');       
-		 },	onStepChanged: function (event, currentIndex, priorIndex) {
-			// When a step is done, add class to the previous section
-			var $allSections = $("#form-total").children("section");
-			console.log($allSections);
-			$allSections.eq(priorIndex).addClass('step-done');}
-    });
 
-    $("#date").datepicker({
-        dateFormat: "MM - DD - yy",
-        showOn: "both",
-        buttonText: '<i class="zmdi zmdi-chevron-down"></i>',
-    });
+  $(".sign_button").click(function(){
+
+    $(".modal-backdrop").removeClass("show");
+
+});
+$("#mobile_button").click(function(){
+
+    $(".modal-backdrop").removeClass("show");
+
+});
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	if(mybutton){
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+	}
+
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+const profileImg = document.getElementById("profileImg");
+const imageInput = document.getElementById("imageInput");
+if(profileImg && imageInput){
+
+// When the image is clicked, trigger the file input
+profileImg.addEventListener("click", () => {
+  imageInput.click();
 });
 
-  
+// When a file is selected, update the profile image
+imageInput.addEventListener("change", function() {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      profileImg.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+  	
+}
   
   
 

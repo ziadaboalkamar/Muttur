@@ -2628,6 +2628,90 @@ button.booking_know {
   object-fit: cover;
   border-radius: 10px;
 }
+/* start login modal */
+p.small.hint_of_number {
+  font-size: 11px;
+  color: black;
+}
+.login_sign_up_modal{
+  border-bottom: 1px solid #80808040;
+  margin-bottom: 15px;
+}
+.login_sign_up_modal .login_button {
+  background: #d3a236;
+  border: none;
+  padding: 6px 88px;
+  border-radius: 5px;
+  color: white;
+}
+.another_tools_login{
+  list-style: none;
+  padding: 0px;
+}
+.another_tools_login li{
+margin-bottom: 15px;
+}
+.another_tools_login button {
+  background: none;
+  width: 100%;
+  border-color: #80808036;
+  border: 1px solid #80808069;
+  padding: 10px;
+  border-radius: 5px;
+}
+.another_tools_login svg{
+  float: left;
+}
+.sign_modal{
+  left: 300px;
+  top: 110px;
+}
+.modal-title{
+  width: 100%;
+  text-align: center;
+}
+.sign_modal .modal-backdrop{
+  display: none;
+}
+/* end login modal */
+/* start fixed buttoon */
+
+.fixed_button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #d3a236;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+#myBtn{
+  display: none;
+}
+#Chat_button {
+  bottom: 67px;
+  padding: 10px 12px;
+}
+#mobile_button {
+  bottom: 114px;
+}
+.fixed_button:hover {
+  background-color: #555;
+}
+.image_of_qr_code{
+  width: 300px;
+    margin: 0 auto;
+}
+#mobileModal{
+  top: 260px;
+    left: 403px;
+}
+/* end fixed button */
   /* start media */
   @media screen and (max-width: 567px) {
     nav.site-navigation{
@@ -2778,5 +2862,22 @@ ul.feauter_list {
 
   font-size: 13px;
 
+}
+#mobileModal {
+  top: 230px;
+  left: 0px;
+}
+.sign_modal {
+  left: 0px;
+  top: 0px;
+}
+.service .data_of_visa {
+  width: 100%;
+}
+.search_form_button {
+  width: 80%;
+}
+.service .nav-pills .nav-link.active, .nav-pills .show > .nav-link, .service .nav-link:hover{
+  margin-bottom: 10px;
 }
   }

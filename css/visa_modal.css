@@ -360,6 +360,12 @@
 .visaModal .close_button{
     float: left;
 }
+.visaModal .done span.step-icon {
+    background: #2EE3A0 !important;
+}
+.visaModal .form-register .steps .done .step-icon::before, .visaModal .form-register .steps .current .step-icon::before{
+    background: #2EE3A0 !important;
+}
 li.back-step-li {
     border: 1px solid #d3a236;
     background-color: unset !important;
@@ -371,7 +377,7 @@ li.back-step-li a{
 /* Responsive */
 @media screen and (max-width: 1199px) {
 	.wizard-v4-content {
-		margin: 180px 20px;
+		margin: 0px;
 	}
 }
 @media screen and (max-width: 991px) {
@@ -390,10 +396,22 @@ li.back-step-li a{
 	.form-register .steps li a .title .step-icon {
 		margin: 0 auto;
 	}
-	.form-register .steps li a .title .step-icon::before,
+	/* .form-register .steps li a .title .step-icon::before,
 	.form-register .steps li:last-child a .title .step-icon::after {
 		content: none;
-	}
+	} */
+    .form-register .steps li:last-child a .title .step-icon::after {
+        content: none;
+    }
+    .visaModal .form-register .steps li:first-of-type .step-icon::before {
+        content: none !important;
+      }
+      .visaModal .form-register .steps li a .step-text {
+       
+        margin-left: 0px;
+        text-align: justify;
+    }
+      
 }
 @media screen and (max-width: 767px) {
 	.visaModal .inner .form-row.form-row-date .form-holder select {
@@ -452,4 +470,17 @@ li.back-step-li a{
 	.visaModal .inner .form-row #checkbox {
 		margin-left: 0;
 	}
+    .visaModal .form-register .steps ul{
+        padding: 0px;
+    }
+    .visaModal .form-register .content{
+        margin: 0px;
+        padding: 0px;
+    }
+    .visaModal .inner.width_in_middle{
+        width: 100%;
+    }
+    .visaModal .payment_method button, .visaModal .payment_method button.active {
+        margin-bottom: 15px;
+    }
 }
