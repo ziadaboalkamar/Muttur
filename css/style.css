@@ -442,7 +442,7 @@ body {
 
   }
   .hero .hero-items .hero_title{
-    font-size: 66px;
+    font-size: 55px;
     color: white;
     padding-bottom: 10px;
   }
@@ -467,7 +467,7 @@ body {
     padding-bottom: 10px;
   }
   .hero-items .hero_pargraph{
-    width: 54%;
+    width: 64%;
       display: block;
       margin: 0 auto;
       color: white;
@@ -587,7 +587,7 @@ font-family: "secoundFont";
   @media (min-width: 992px) {
     .form-search-position {
       position: relative;
-      bottom: 104px;
+      bottom: 75px;
       z-index: 1; } }
   .form-search .form-control {
     font-size: 14px;
@@ -634,10 +634,12 @@ font-family: "secoundFont";
       outline: 0;
       box-shadow: none; }
     .width_of_tabs{
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
       padding-bottom: 17px;
     border: none;
+    display: flex;
+    justify-content: center;
     }
     .nav-underline .nav-link.active, .nav-underline .show > .nav-link  {
       border: none;
@@ -797,6 +799,7 @@ color: white;
   border: none;
   border-radius: 10px;
   padding: 6px 12px;
+  font-size: 15px;
 }
 .love_product{
   color: #d3a236;
@@ -823,8 +826,10 @@ color: white;
 
 }
 .service ul#pills-tab {
-  width: 65%;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+ justify-content: center;
 }
 .service .nav-link{
   color: black;
