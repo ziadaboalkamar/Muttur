@@ -342,8 +342,31 @@ imageInput.addEventListener("change", function() {
   }
 });
 
+
   	
 }
-  
+    function handleOpenModal() {
+    const modal = document.getElementById('signModal');
+
+    // Remove any previous style class
+    modal.classList.remove('from-nav', 'from-another');
+
+    // Find visible section and check class
+    const sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+        if (section.classList.contains('nav')) {
+          modal.classList.add('from-nav');
+        } else if (section.classList.contains('another_section')) {
+          modal.classList.add('from-another');
+        }
+      }
+    });
+
+    // Show the modal
+    const bsModal = new bootstrap.Modal(modal);
+    bsModal.show();
+  }
   
 

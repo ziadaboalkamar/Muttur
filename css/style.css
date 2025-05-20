@@ -2873,9 +2873,11 @@ ul.feauter_list {
   left: 0px;
 }
 .sign_modal {
-  left: 0px;
-  top: 0px;
-}
+        left: 0px;
+        top: 0px;
+        z-index: 9999999;
+        width: 100%;
+    }
 .service .data_of_visa {
   width: 100%;
 }
